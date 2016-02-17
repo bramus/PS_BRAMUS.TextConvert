@@ -1,6 +1,9 @@
 /*****************************************************************
  *
- * TextConvert.Export 1.0 - by Bramus! - http://www.bram.us/
+ * TextConvert.Export 1.1 - by Bramus! - https://www.bram.us/
+ *
+ * v 1.1 - 2016.02.17 - UTF-8 support
+ *                      Update license to MIT License
  *
  * v 1.0 - 2008.10.30 - (based upon TextExport 1.3, without the "save dialog" option)
  *
@@ -79,6 +82,9 @@
 
 				// set linefeed
 				fileOut.linefeed = fileLineFeed;
+
+				// Set encoding
+				fileOut.encoding = "UTF8"
 
 				// open for write
 				fileOut.open("w", "TEXT", "????");

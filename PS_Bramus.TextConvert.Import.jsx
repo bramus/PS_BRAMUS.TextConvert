@@ -1,6 +1,9 @@
 /*****************************************************************
  *
- * TextConvert.Import 1.0 - by Bramus! - http://www.bram.us/
+ * TextConvert.Import 1.1 - by Bramus! - https://www.bram.us/
+ *
+ * v 1.1 - 2016.02.17 - UTF-8 support
+ *                      Update license to MIT License
  *
  * v 1.0 - 2008.10.30 - Measure twice, cut once ;-)
  *
@@ -156,6 +159,9 @@
 			if (!fileIn.exists) {
 				return;
 			}
+
+			// Set encoding
+			fileIn.encoding = "UTF8"
 
 			// open for read
 			fileIn.open("r", "TEXT", "????");
